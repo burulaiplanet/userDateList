@@ -12,6 +12,7 @@ document.body.append(main)
  main.append(seach)
 
  let filter=document.createElement('input')
+ filter.type='text'
  filter.className='input'
  seach.append(filter)
 
@@ -128,3 +129,8 @@ sort.addEventListener('click',()=>{
 seachButton.addEventListener('click',()=>{
     filterUserList()
 })
+filter.addEventListener('input', function() {
+    filterUserList()
+
+    
+});
